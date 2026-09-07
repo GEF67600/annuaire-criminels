@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title or "Annuaire criminel" }}</title>
-  <link rel="stylesheet" href="/style.css">
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/style.css' | url }}">
+  <link href="{{ '/pagefind/pagefind-ui.css' | url }}" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="/"><h1>Annuaire criminel</h1></a>
+    <a href="{{ '/' | url }}"><h1>Annuaire criminel</h1></a>
     <div id="search"></div>
   </header>
 
@@ -17,7 +17,7 @@
     {{ content | safe }}
   </main>
 
-  <script src="/pagefind/pagefind-ui.js"></script>
+  <script src="{{ '/pagefind/pagefind-ui.js' | url }}"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       new PagefindUI({
