@@ -1,15 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Annuaire criminels
+title: Annuaire criminel
 permalink: /index.html
 ---
-<p>{{ collections.criminels.length }} fiches recensées.</p>
-
-<ul class="liste-criminels">
-  {% for item in collections.criminels %}
-  <li>
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-    <span class="tag">{{ item.data.type | join(", ") }}</span>
-  </li>
-  {% endfor %}
-</ul>
+<p>{{ collections.criminels.length }} fiches recensées. Utilise le menu ci-dessus ou la recherche pour naviguer.</p>
