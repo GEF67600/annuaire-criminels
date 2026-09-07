@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/annuaire-criminels/",
     dir: {
       input: "src",
       includes: "_includes",
