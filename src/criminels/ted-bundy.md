@@ -8,6 +8,7 @@ victimes: 30
 statut: "Exécuté"
 photo: "/images/ted-bundy.jpg"
 tags: ["Washington", "Floride", "Necrophile"]
+continent: "Amérique"
 ---
 
 Theodore Robert Bundy, né le 24 novembre 1946 à Burlington (Vermont), est un tueur en série américain actif principalement entre 1974 et 1978. Étudiant en droit à l'apparence soignée et au charisme reconnu, il tranche avec l'image habituelle du tueur en série de l'époque.

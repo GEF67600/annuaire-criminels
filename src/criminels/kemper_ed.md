@@ -8,6 +8,7 @@ victimes: 10
 statut: "Incarcéré à vie"
 photo: "/images/ed-kemper.jpg"
 tags: ["Californie", "Co-ed Killer"]
+continent: "Amérique"
 ---
 
 Edmund Emil Kemper III, surnommé le "Co-ed Killer", est né le 18 décembre 1948 à Burbank, en Californie. Adolescent, il présente déjà des troubles de comportement graves dans un contexte familial très conflictuel.

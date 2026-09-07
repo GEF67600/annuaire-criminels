@@ -8,6 +8,7 @@ victimes: 7
 statut: "Exécutée"
 photo: "/images/aileen-wuornos.jpg"
 tags: ["Floride", "Femme"]
+continent: "Amérique"
 ---
 
 Aileen Carol Wuornos, née le 29 février 1956 à Rochester (Michigan), est une tueuse en série américaine surnommée "la demoiselle de la mort". Son enfance est marquée par l'abandon et la maltraitance ; elle se prostitue le long des autoroutes de Floride à l'âge adulte.

@@ -12,12 +12,17 @@
     <img src="{{ '/images/banniere.jpg' | url }}" alt="Annuaire criminels" class="banniere">
   </a>
   <header>
+    {% include "menu.njk" %}
     <div id="search"></div>
   </header>
 
   <main>
     {{ content | safe }}
   </main>
+
+  <footer>
+    &copy; Gef67600 - Tous droits réservés - Elsass 2026 &reg;
+  </footer>
 
   <script src="{{ '/pagefind/pagefind-ui.js' | url }}"></script>
   <script>
@@ -29,8 +34,5 @@
       });
     });
   </script>
-  <footer>
-    &copy; Gef67600 - Tous droits réservés - Elsass 2026 &reg;
-  </footer>
 </body>
 </html>
