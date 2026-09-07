@@ -6,7 +6,7 @@ pays: "États-Unis"
 periode: "1964, puis 1972-1973"
 victimes: 10
 statut: "Incarcéré à vie"
-photo: "/images/ed kemper.jpeg"
+photo: "\images\ed kemper.jpeg"
 tags: ["Californie", "Co-ed Killer"]
 ---
 
