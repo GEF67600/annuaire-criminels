@@ -2,6 +2,9 @@ module.exports = function (eleventyConfig) {
   // Copie le CSS tel quel dans le site généré
   eleventyConfig.addPassthroughCopy({ "src/style.css": "style.css" });
 
+  // Copie les photos telles quelles
+  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+
   // Collection = toutes les fiches du dossier src/criminels/*.md
   eleventyConfig.addCollection("criminels", (collectionApi) => {
     return collectionApi
