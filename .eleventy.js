@@ -12,18 +12,14 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.data.title.localeCompare(b.data.title));
   });
 
-    eleventyConfig.addCollection("menu", (collectionApi) => {
+      eleventyConfig.addCollection("menu", (collectionApi) => {
     const items = collectionApi.getFilteredByGlob("src/criminels/*.md");
     const tree = {};
     items.forEach((item) => {
-      const continent = item.data.continent || "Autre";
-      const pays = item.data.pays || "Autre";
       const types = (item.data.type && item.data.type.length) ? item.data.type : ["Autre"];
-      tree[continent] = tree[continent] || {};
-      tree[continent][pays] = tree[continent][pays] || {};
       types.forEach((t) => {
-        tree[continent][pays][t] = tree[continent][pays][t] || [];
-        tree[continent][pays][t].push(item);
+        tree[t] = tree[t] || [];
+        tree[t].push(item);
       });
     });
     return tree;
