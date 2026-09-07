@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Annuaire criminel
+title: Annuaire criminels
 permalink: /index.html
 ---
 <p>{{ collections.criminels.length }} fiches recensées.</p>
@@ -8,7 +8,7 @@ permalink: /index.html
 <ul class="liste-criminels">
   {% for item in collections.criminels %}
   <li>
-    <a href="{{ item.url }}">{{ item.data.title }}</a>
+    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
     <span class="tag">{{ item.data.type | join(", ") }}</span>
   </li>
   {% endfor %}
