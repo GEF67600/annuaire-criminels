@@ -10,3 +10,4 @@ header a { color:#eee; text-decoration:none; }
 .tag { color:#888; font-size:.85rem; }
 .meta { list-style:none; padding:0; color:#aaa; }
 .meta li { padding:.15rem 0; }
+.banniere { width: 100%; display: block; max-height: 220px; object-fit: cover; }
