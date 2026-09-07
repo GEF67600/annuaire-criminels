@@ -1,0 +1,12 @@
+:root { color-scheme: dark; }
+body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 1.5rem; background:#111; color:#eee; }
+header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
+header a { color:#eee; text-decoration:none; }
+#search { min-width: 260px; }
+.liste-criminels { list-style:none; padding:0; }
+.liste-criminels li { padding:.5rem 0; border-bottom:1px solid #333; display:flex; justify-content:space-between; }
+.liste-criminels a { color:#e8543e; text-decoration:none; font-weight:600; }
+.liste-criminels a:hover { text-decoration:underline; }
+.tag { color:#888; font-size:.85rem; }
+.meta { list-style:none; padding:0; color:#aaa; }
+.meta li { padding:.15rem 0; }

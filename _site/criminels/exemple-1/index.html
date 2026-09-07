@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nom Prénom (exemple)</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="/"><h1>Annuaire criminel</h1></a>
+    <div id="search"></div>
+  </header>
+
+  <main>
+    <article data-pagefind-body>
+  <p><a href="/">&larr; Retour à l'annuaire</a></p>
+  <h1>Nom Prénom (exemple)</h1>
+
+  <ul class="meta">
+    
+    <li data-pagefind-filter="Type:Tueur en série">Type : Tueur en série</li>
+    
+    <li data-pagefind-filter="Pays:France">Pays : France</li>
+    <li>Période : 1975-1982</li>
+    <li>Victimes (estimation) : 7</li>
+    <li data-pagefind-filter="Statut:Condamné">Statut : Condamné</li>
+  </ul>
+
+  <div class="corps">
+    <p>Résumé biographique et factuel du parcours criminel. Sources vérifiables à citer ici (articles de presse, jugements, ouvrages).</p>
+<h2>Modus operandi</h2>
+<p>Description factuelle.</p>
+<h2>Arrestation et jugement</h2>
+<p>Description factuelle.</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showFilters: true
+      });
+    });
+  </script>
+</body>
+</html>
